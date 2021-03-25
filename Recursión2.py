@@ -43,9 +43,11 @@ def contarDigitosFlotante(num):
     else:
         return "Ingrese un número que contenga decimales"
 def flotante_aux(res_int):
+    res_int=abs(res_int)
     if(res_int<=9):
         return 1
     else:
+        print(res_int)
         return 1+flotante_aux(res_int//10)
 "======================================="
 """
